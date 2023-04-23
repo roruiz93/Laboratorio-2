@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1682291409 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\unidad 2 - introduc orientacion a objetos\listatareas\clase articulo.cpp\main.cpp
+	<iostream>
+	"Articulo.h"
+	"funciones.h"
+
+1682289512 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\unidad 2 - introduc orientacion a objetos\listatareas\clase articulo.cpp\articulo.cpp
+	"Articulo.h"
+	<cstring>
+	<iostream>
+
+1682288701 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\unidad 2 - introduc orientacion a objetos\listatareas\clase articulo.cpp\articulo.h
+
+1682291257 source:c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\unidad 2 - introduc orientacion a objetos\listatareas\clase articulo.cpp\funciones.cpp
+	"funciones.h"
+	<cstring>
+	<iostream>
+
+1682291240 c:\users\gmontemuro\desktop\utn\utn laboratorio\utn laboratorio 2 - objetos\unidad 2 - introduc orientacion a objetos\listatareas\clase articulo.cpp\funciones.h
+	"Articulo.h"
+
