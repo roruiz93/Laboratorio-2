@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="./" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="./" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -30,7 +32,24 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="SFML/include" />
 		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="SFML/lib" />
+		</Linker>
+		<Unit filename="Trompo.cpp" />
+		<Unit filename="Trompo.h" />
+		<Unit filename="TrompoP1.cpp" />
+		<Unit filename="TrompoP1.h" />
+		<Unit filename="TrompoP2.cpp" />
+		<Unit filename="TrompoP2.h" />
+		<Unit filename="gameplay.cpp" />
+		<Unit filename="gameplay.h" />
+		<Unit filename="trompo1.png" />
+		<Unit filename="trompo2.png" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

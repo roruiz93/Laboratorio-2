@@ -2,54 +2,39 @@
 
 TrompoP2::TrompoP2()
 {
-    _shape.setPosition(300, 300);
+    _texture.loadFromFile("trompo2.png");
+    _sprite.setTexture(_texture);
+    _sprite.setTextureRect({0,0,60,60});
+    _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height/2);
+    _sprite.setPosition(350, 300);
+    _velocidad = 2.f;
+    _velocidadGiro = 0.25f;
 }
 
 //UPDATE: Se realiza la actualizacion de los estados en el objeto
-void TrompoP2::update()
+void TrompoP2:: cmd()
 {
-        //ARRIBA
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-        {
-            _shape.move(0,-_velocidad);
-        }
-        //ABAJO
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-        {
-            _shape.move(0,_velocidad);
-        }
-        //IZQUIERDA
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-        {
-            _shape.move(-_velocidad,0);
-        }
-        //DERECHA
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-        {
-            _shape.move(_velocidad,0);
-        }
+    _direccion = {0,0};
+    _estado = TrompoEstado::Quieto;
 
-
-        //rebotes en ventana
-        if(_shape.getGlobalBounds().left < 0)
-        {
-            _shape.setPosition(0,_shape.getPosition().y);
-        }
-
-        if(_shape.getGlobalBounds().top < 0)
-        {
-            _shape.setPosition(_shape.getPosition().x,0);
-        }
-
-        if(_shape.getGlobalBounds().left + _shape.getGlobalBounds().width > 800)
-        {
-            _shape.setPosition(800 - _shape.getGlobalBounds().width, _shape.getPosition().y);
-        }
-
-        if(_shape.getGlobalBounds().top + _shape.getGlobalBounds().height > 600)
-        {
-            _shape.setPosition(_shape.getPosition().x,600 - _shape.getGlobalBounds().height);
-        }
-
-
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+    {
+        _direccion.y = -_velocidad;
+        _estado = TrompoEstado::Movimiento;
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+    {
+        _direccion.y = _velocidad;
+        _estado = TrompoEstado::Movimiento;
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+    {
+        _direccion.x = _velocidad;
+        _estado = TrompoEstado::Movimiento;
+    }
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+    {
+        _direccion.x = -_velocidad;
+        _estado = TrompoEstado::Movimiento;
+    }
 }
