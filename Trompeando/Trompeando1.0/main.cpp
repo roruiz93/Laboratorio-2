@@ -23,7 +23,7 @@ int main()
 
             sf::Text a;
             a.setFont(openn);
-            a.setString("Perdiste");
+            a.setString("Perdiste campeon");
             a.setPosition(200,25);
             a.setFillColor(sf::Color::Magenta);
             a.setCharacterSize(30);

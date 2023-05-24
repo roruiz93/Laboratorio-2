@@ -8,7 +8,6 @@ class TrompoP1 : public Trompo
 {
     public:
         TrompoP1();
-
         void cmd();
 };
 
