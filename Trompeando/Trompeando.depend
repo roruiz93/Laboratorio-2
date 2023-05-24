@@ -440,6 +440,28 @@
 	"TrompoP2.h"
 	<iostream>
 
+<<<<<<< Updated upstream
+=======
+1683487958 c:\users\ususario\onedrive\documentos\github\laboratorio-2\trompeando\trompo.h
+	<SFML/Graphics.hpp>
+
+1683486358 c:\users\ususario\onedrive\documentos\github\laboratorio-2\trompeando\trompop1.h
+	"Trompo.h"
+
+1683486358 c:\users\ususario\onedrive\documentos\github\laboratorio-2\trompeando\trompop2.h
+	"Trompo.h"
+
+1683490757 source:c:\users\ususario\onedrive\documentos\github\laboratorio-2\trompeando\trompo.cpp
+	"Trompo.h"
+	<time.h>
+
+1683491271 source:c:\users\ususario\onedrive\documentos\github\laboratorio-2\trompeando\trompop1.cpp
+	"TrompoP1.h"
+
+1683491222 source:c:\users\ususario\onedrive\documentos\github\laboratorio-2\trompeando\trompop2.cpp
+	"TrompoP2.h"
+
+>>>>>>> Stashed changes
 1683480694 c:\users\ususario\onedrive\documentos\github\laboratorio-2\trompeando\sfml\include\sfml\graphics.hpp
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
@@ -849,6 +871,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
+<<<<<<< Updated upstream
 1684616936 c:\users\ususario\onedrive\documentos\github\laboratorio-2\trompeando\trompo.h
 	<SFML/Graphics.hpp>
 
@@ -876,3 +899,5 @@
 	<SFML/Graphics.hpp>
 	"Trompo.h"
 
+=======
+>>>>>>> Stashed changes

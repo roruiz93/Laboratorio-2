@@ -3,8 +3,19 @@
 
 enum class TrompoEstado
 {
+<<<<<<< Updated upstream
     Quieto,
     Movimiento
+=======
+    protected:
+        sf::CircleShape _shape;
+        float _velocidad;
+
+    public:
+        Trompo();
+        sf::CircleShape& getDraw();
+        //Colision
+>>>>>>> Stashed changes
 };
 
 

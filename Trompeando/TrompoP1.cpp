@@ -1,6 +1,7 @@
 #include "TrompoP1.h"
 //
 TrompoP1::TrompoP1()
+<<<<<<< Updated upstream
         {
             _texture.loadFromFile("trompo1.png");
             _sprite.setTexture(_texture);
@@ -14,6 +15,12 @@ TrompoP1::TrompoP1()
 void TrompoP1::cmd()
         {
             _direccion = {0 ,0};
+=======
+{
+    _shape.setFillColor(sf::Color(rand() % 210, rand() % 222, rand() % 255));
+    _shape.setPosition(100, 100);
+}
+>>>>>>> Stashed changes
 
             if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
             {

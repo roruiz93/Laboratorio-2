@@ -3,6 +3,12 @@
 
 class TrompoP2 : public Trompo
 {
+<<<<<<< Updated upstream
+=======
+    private:
+
+
+>>>>>>> Stashed changes
     public:
         TrompoP2();
 

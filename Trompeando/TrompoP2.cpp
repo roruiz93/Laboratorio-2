@@ -2,6 +2,7 @@
 
 TrompoP2::TrompoP2()
 {
+<<<<<<< Updated upstream
     _texture.loadFromFile("trompo2.png");
     _sprite.setTexture(_texture);
     _sprite.setTextureRect({0,0,60,60});
@@ -9,6 +10,11 @@ TrompoP2::TrompoP2()
     _sprite.setPosition(350, 300);
     _velocidad = 2.f;
     _velocidadGiro = 0.25f;
+=======
+
+_shape.setFillColor(sf::Color(rand() % 255, rand() % 255, rand() % 255));
+    _shape.setPosition(300, 300);
+>>>>>>> Stashed changes
 }
 
 //UPDATE: Se realiza la actualizacion de los estados en el objeto

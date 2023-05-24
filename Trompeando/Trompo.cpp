@@ -1,4 +1,5 @@
 #include "Trompo.h"
+<<<<<<< Updated upstream
 
 
 // funcion rebotar despues de la colicion.
@@ -22,6 +23,16 @@ void Trompo::setPosition(float x, float y)
 sf::Sprite Trompo::getSprite()
 {
     return _sprite;
+=======
+#include <time.h>
+Trompo::Trompo()
+{
+        srand(time(NULL));
+
+   // _shape.setFillColor(sf::Color::Blue);
+    _shape.setRadius(30);
+    _velocidad = 3;
+>>>>>>> Stashed changes
 }
 
 //devuelve la velocidad con la gira
